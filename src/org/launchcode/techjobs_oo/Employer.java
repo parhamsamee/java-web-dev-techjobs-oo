@@ -3,10 +3,14 @@ package org.launchcode.techjobs_oo;
 import java.util.Objects;
 
 public class Employer {
+
+    //Variables
     private int id;
     private static int nextId = 1;
-    private String value;
+    private String value; //name of the employer
 
+    //Constructors
+    //gives the new Employer object a unique/different id number
     public Employer() {
         id = nextId;
         nextId++;
