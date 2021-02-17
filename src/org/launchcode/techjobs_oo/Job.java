@@ -27,9 +27,13 @@ public class Job {
 
     //Code a second constructor that takes 5 parameters and assigns values to
     // name, employer, location, positionType, and coreCompetency
-    public Job(String name, Object employer, Object location, Object positionType, Object coreCompetency) {
+    public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this();
         this.name = name;
+        this.employer = employer;
+        this.location = location;
+        this.positionType = positionType;
+        this.coreCompetency = coreCompetency;
     }
 
 
