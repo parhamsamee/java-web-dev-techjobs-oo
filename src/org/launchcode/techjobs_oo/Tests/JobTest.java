@@ -10,11 +10,7 @@ import org.junit.Assert;
 
 public class JobTest {
 
-    Job job_1;
-    Job job_2;
-    Job job_3;
-    Job job_4;
-    Job job_5;
+    Job job_1, job_2, job_3, job_4, job_5;
 
     @Before
     public void createJobObjects() {
@@ -32,6 +28,7 @@ public class JobTest {
         //TODO Use assertEquals, assertTrue, or assertFalse to test that the
         // ID values for the two objects are NOT the same and differ by 1.
         Assert.assertTrue(job_1.getId() != job_2.getId());
+        Assert.assertEquals(1, job_2.getId() - job_1.getId());
     }
 
     @Test
